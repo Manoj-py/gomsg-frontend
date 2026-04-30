@@ -29,6 +29,8 @@ GoMsg Frontend is a modern web client for the GoMsg real-time messaging platform
 ---
 
 ## 📁 Project Structure
+
+```
 ├── app
 │   ├── chat
 │   ├── layout.tsx
@@ -54,6 +56,9 @@ GoMsg Frontend is a modern web client for the GoMsg real-time messaging platform
 * **lib/**
   Utility functions and API helpers
 
+* **hooks/**
+  Custom React hooks
+
 * **public/**
   Static assets
 
@@ -66,7 +71,7 @@ GoMsg Frontend is a modern web client for the GoMsg real-time messaging platform
 
 ### 1. Clone the repository
 
-```id="p9k1s2"
+```
 git clone https://github.com/Manoj-py/go-msg-frontend.git
 cd go-msg-frontend
 ```
@@ -77,7 +82,7 @@ cd go-msg-frontend
 
 If you're using **pnpm**:
 
-```id="w2n8x1"
+```
 pnpm install
 ```
 
@@ -87,38 +92,43 @@ pnpm install
 
 Create a `.env.local` file in the root directory:
 
-```id="m7k2z9"
+```
 NEXT_PUBLIC_API_URL=https://gomsg-backend.onrender.com
 NEXT_PUBLIC_WEBSOCKET_URL=wss://gomsg-backend.onrender.com
 ```
 
 For local development:
 
-```id="c3l5d8"
+```
 NEXT_PUBLIC_API_URL=http://localhost:4000
-NEXT_PUBLIC_WEBSOCKET_URL=wss://localhost:4000
+NEXT_PUBLIC_WEBSOCKET_URL=ws://localhost:4000
 ```
 
 ---
 
 ### 4. Run the development server
 
-```id="x1q9v7"
+```
 pnpm dev
 ```
 
 App will run on:
 
-```id="z8m4t2"
+```
 http://localhost:3000
 ```
 
+---
+
 ## 🧪 Build for Production
 
-```id="b6v3h1"
+```
 pnpm build
 pnpm start
 ```
+
+---
+
 ## 📌 Summary
 
 This frontend includes:
@@ -135,7 +145,8 @@ This frontend includes:
 
 * Ensure backend is running before using the app
 * Use `wss://` in production for WebSockets
-* Cookies / auth must be configured correctly on backend
+* Cookies/auth must be configured correctly on backend
+* WebSocket connection is established only when a chat is opened (to optimize resource usage)
 
 ---
 
