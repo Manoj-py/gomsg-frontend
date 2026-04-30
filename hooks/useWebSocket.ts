@@ -19,7 +19,7 @@ interface UseWebSocketOptions {
   onError?: (error: Event) => void
 }
 
-const WS_URL = 'ws://localhost:4000/v1/ws'
+const WS_URL = process.env.NEXT_PUBLIC_WEBSOCKET_URL + '/v1/ws'
 
 export function useWebSocket({
   conversationId,
