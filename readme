@@ -1,0 +1,144 @@
+# GoMsg Frontend
+
+GoMsg Frontend is a modern web client for the GoMsg real-time messaging platform. Built with Next.js and TypeScript, it provides a fast, responsive, and user-friendly interface for chatting, managing conversations, and interacting with the backend services.
+
+---
+
+## 🚀 Features
+
+* User authentication (Login / Register)
+* Direct messaging (1-to-1 chat)
+* Group conversations
+* Real-time messaging using WebSockets
+* Sidebar with conversations & contacts
+* Chat interface with live updates
+* Secure API communication with backend
+* Built using Next.js App Router
+
+---
+
+## 🛠️ Tech Stack
+
+* **Next.js (App Router)**
+* **TypeScript**
+* **React**
+* **WebSockets**
+* **Tailwind CSS / UI components**
+* **Vercel (deployment)**
+
+---
+
+## 📁 Project Structure
+├── app
+│   ├── chat
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+├── lib
+├── hooks
+├── public
+├── styles
+```
+
+### 🔍 Explanation
+
+* **app/**
+  Main application folder using Next.js App Router
+
+  * `(auth)` → Login/Register pages
+  * `chat` → Chat UI and messaging screens
+
+* **components/**
+  Reusable UI components (buttons, inputs, chat UI, etc.)
+
+* **lib/**
+  Utility functions and API helpers
+
+* **public/**
+  Static assets
+
+* **styles/**
+  Global styles and Tailwind configuration
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+
+```id="p9k1s2"
+git clone https://github.com/Manoj-py/go-msg-frontend.git
+cd go-msg-frontend
+```
+
+---
+
+### 2. Install dependencies
+
+If you're using **pnpm**:
+
+```id="w2n8x1"
+pnpm install
+```
+
+---
+
+### 3. Setup Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```id="m7k2z9"
+NEXT_PUBLIC_API_URL=https://gomsg-backend.onrender.com
+NEXT_PUBLIC_WEBSOCKET_URL=wss://gomsg-backend.onrender.com
+```
+
+For local development:
+
+```id="c3l5d8"
+NEXT_PUBLIC_API_URL=http://localhost:4000
+NEXT_PUBLIC_WEBSOCKET_URL=wss://localhost:4000
+```
+
+---
+
+### 4. Run the development server
+
+```id="x1q9v7"
+pnpm dev
+```
+
+App will run on:
+
+```id="z8m4t2"
+http://localhost:3000
+```
+
+## 🧪 Build for Production
+
+```id="b6v3h1"
+pnpm build
+pnpm start
+```
+## 📌 Summary
+
+This frontend includes:
+
+* Fully functional chat UI
+* Real-time messaging via WebSockets
+* Authentication flows
+* Clean and scalable architecture
+* Production-ready deployment on Vercel
+
+---
+
+## 💡 Notes
+
+* Ensure backend is running before using the app
+* Use `wss://` in production for WebSockets
+* Cookies / auth must be configured correctly on backend
+
+---
+
+## 👨‍💻 Author
+
+Manoj Gowda
