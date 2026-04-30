@@ -6,25 +6,25 @@ GoMsg Frontend is a modern web client for the GoMsg real-time messaging platform
 
 ## 🚀 Features
 
-* User authentication (Login / Register)
-* Direct messaging (1-to-1 chat)
-* Group conversations
-* Real-time messaging using WebSockets
-* Sidebar with conversations & contacts
-* Chat interface with live updates
-* Secure API communication with backend
-* Built using Next.js App Router
+- User authentication (Login / Register)
+- Direct messaging (1-to-1 chat)
+- Group conversations
+- Real-time messaging using WebSockets
+- Sidebar with conversations & contacts
+- Chat interface with live updates
+- Secure API communication with backend
+- Built using Next.js App Router
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Next.js (App Router)**
-* **TypeScript**
-* **React**
-* **WebSockets**
-* **Tailwind CSS / UI components**
-* **Vercel (deployment)**
+- **Next.js (App Router)**
+- **TypeScript**
+- **React**
+- **WebSockets**
+- **Tailwind CSS / UI components**
+- **Vercel (deployment)**
 
 ---
 
@@ -44,26 +44,25 @@ GoMsg Frontend is a modern web client for the GoMsg real-time messaging platform
 
 ### 🔍 Explanation
 
-* **app/**
-  Main application folder using Next.js App Router
+- **app/**  
+  Main application folder using Next.js App Router  
+  - `(auth)` → Login/Register pages  
+  - `chat` → Chat UI and messaging screens  
 
-  * `(auth)` → Login/Register pages
-  * `chat` → Chat UI and messaging screens
-
-* **components/**
+- **components/**  
   Reusable UI components (buttons, inputs, chat UI, etc.)
 
-* **lib/**
-  Utility functions and API helpers
+- **lib/**  
+  Utility functions and API helpers  
 
-* **hooks/**
-  Custom React hooks
+- **hooks/**  
+  Custom React hooks  
 
-* **public/**
-  Static assets
+- **public/**  
+  Static assets  
 
-* **styles/**
-  Global styles and Tailwind configuration
+- **styles/**  
+  Global styles and Tailwind configuration  
 
 ---
 
@@ -71,7 +70,7 @@ GoMsg Frontend is a modern web client for the GoMsg real-time messaging platform
 
 ### 1. Clone the repository
 
-```
+```bash
 git clone https://github.com/Manoj-py/go-msg-frontend.git
 cd go-msg-frontend
 ```
@@ -80,9 +79,7 @@ cd go-msg-frontend
 
 ### 2. Install dependencies
 
-If you're using **pnpm**:
-
-```
+```bash
 pnpm install
 ```
 
@@ -92,14 +89,14 @@ pnpm install
 
 Create a `.env.local` file in the root directory:
 
-```
+```env
 NEXT_PUBLIC_API_URL=https://gomsg-backend.onrender.com
 NEXT_PUBLIC_WEBSOCKET_URL=wss://gomsg-backend.onrender.com
 ```
 
 For local development:
 
-```
+```env
 NEXT_PUBLIC_API_URL=http://localhost:4000
 NEXT_PUBLIC_WEBSOCKET_URL=ws://localhost:4000
 ```
@@ -108,7 +105,7 @@ NEXT_PUBLIC_WEBSOCKET_URL=ws://localhost:4000
 
 ### 4. Run the development server
 
-```
+```bash
 pnpm dev
 ```
 
@@ -122,7 +119,7 @@ http://localhost:3000
 
 ## 🧪 Build for Production
 
-```
+```bash
 pnpm build
 pnpm start
 ```
@@ -133,20 +130,20 @@ pnpm start
 
 This frontend includes:
 
-* Fully functional chat UI
-* Real-time messaging via WebSockets
-* Authentication flows
-* Clean and scalable architecture
-* Production-ready deployment on Vercel
+- Fully functional chat UI  
+- Real-time messaging via WebSockets  
+- Authentication flows  
+- Clean and scalable architecture  
+- Production-ready deployment on Vercel  
 
 ---
 
 ## 💡 Notes
 
-* Ensure backend is running before using the app
-* Use `wss://` in production for WebSockets
-* Cookies/auth must be configured correctly on backend
-* WebSocket connection is established only when a chat is opened (to optimize resource usage)
+- Ensure backend is running before using the app  
+- Use `wss://` in production for WebSockets  
+- Cookies/auth must be configured correctly on backend  
+- WebSocket connection is established **only when a chat is opened** (to optimize resource usage)
 
 ---
 
